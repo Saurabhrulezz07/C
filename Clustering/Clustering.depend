@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1431322292 source:/home/anubhav/c/clustering.c
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+
+1431322292 
+
+1431362009 source:/home/anubhav/c/Clustering/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1431372705 
+
+1431362009 source:/home/anubhav/c/Clustering/clusterHeadSelection.c
+
+1431322292 source:c:\users\user\google drive\c\clustering.c
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+
+1431362808 source:c:\users\user\google drive\c\clustering\clusterheadselection.c
+
+1431372705 source:c:\users\user\google drive\c\clustering\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1431322292 source:/media/anubhav/Windows/Users/user/Google Drive/c/clustering.c
+	<math.h>
+	<stdlib.h>
+	<stdio.h>
+
+1431362808 source:/media/anubhav/Windows/Users/user/Google Drive/c/Clustering/clusterHeadSelection.c
+
+1431372705 source:/media/anubhav/Windows/Users/user/Google Drive/c/Clustering/main.c
+	<stdio.h>
+	<stdlib.h>
+
