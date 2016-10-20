@@ -1,9 +1,0 @@
-      #include <stdio.h>
-      void main()
-      {
-           int i,t;
-           for (i = 0;i < 5; i++)
-           {  int a = i;
-           }
-           t=a;
-        }
