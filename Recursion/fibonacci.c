@@ -1,3 +1,4 @@
+/* a program to display fibnocci series using Recursion */
 #include<stdio.h>
 int fib(int n);
 void main()
