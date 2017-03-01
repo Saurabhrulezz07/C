@@ -5,7 +5,6 @@ int main()
 {
     int dec,bin=0,p=1;
     scanf("%d",&dec);
-    printf("%d\n",1%2);
     while(dec)
     {
         printf("dec=%d bin=%d p=%d\n",dec,bin,p);

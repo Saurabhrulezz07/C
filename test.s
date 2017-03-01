@@ -1,42 +1,36 @@
 	.file	"test.c"
 	.section	.rodata
-.LC1:
-	.string	"%f"
+.LC0:
+	.string	"%d"
 	.text
 	.globl	main
 	.type	main, @function
 main:
 .LFB0:
 	.cfi_startproc
-	pushl	%ebp
-	.cfi_def_cfa_offset 8
-	.cfi_offset 5, -8
-	movl	%esp, %ebp
-	.cfi_def_cfa_register 5
-	andl	$-16, %esp
-	subl	$32, %esp
-	movl	$10, 24(%esp)
-	fildl	24(%esp)
-	fldl	.LC0
-	fmulp	%st, %st(1)
-	fildl	24(%esp)
-	fmulp	%st, %st(1)
-	fstps	28(%esp)
-	flds	28(%esp)
-	fstpl	4(%esp)
-	movl	$.LC1, (%esp)
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	subq	$16, %rsp
+	movl	$65, -12(%rbp)
+	movl	$13, -8(%rbp)
+	movl	-12(%rbp), %eax
+	cltd
+	idivl	-8(%rbp)
+	movl	%eax, -4(%rbp)
+	movl	-4(%rbp), %eax
+	movl	%eax, %esi
+	movl	$.LC0, %edi
+	movl	$0, %eax
 	call	printf
+	movl	$0, %eax
 	leave
-	.cfi_restore 5
-	.cfi_def_cfa 4, 4
+	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
 .LFE0:
 	.size	main, .-main
-	.section	.rodata
-	.align 8
-.LC0:
-	.long	1374389535
-	.long	1074339512
-	.ident	"GCC: (Ubuntu 4.8.2-19ubuntu1) 4.8.2"
+	.ident	"GCC: (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4"
 	.section	.note.GNU-stack,"",@progbits

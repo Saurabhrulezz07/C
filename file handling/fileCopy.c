@@ -6,7 +6,7 @@ void main()
     char c;
     fp1=fopen("test","r");
     fp2=fopen("testCopy","w");
-    c=getc(fp1);
+    c=fgetc(fp1);
     while(c!=EOF)
     {
         fputc(c,fp2); //To display character on screen
